@@ -1,0 +1,16 @@
+{
+    "name": "latte_fs",
+    "version": "0.0.1",
+    "description": "latte_fs library for Node.js",
+	"keywords":["latte"],
+	"author":"qiongtubao",
+    "main": "./lib/index.js",
+    "dependencies": {
+        "bindings": "^1.3.0",
+        "nan": "~2.10.0",
+        "node-gyp": "*"
+    },
+    "scripts": {
+        "install": "(./node_modules/node-gyp/bin/node-gyp.js configure build) || (exit 0)"
+    }
+}
